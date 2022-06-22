@@ -97,7 +97,7 @@ def draw():
 
     t = constrain(frameCount % 400 / 300.0, 0, 1)
     for ator in atores:
-        if keyPressed:
+        if keyIsPressed:
             texto = ator['formula']
         else:
             texto = ator['nome']
