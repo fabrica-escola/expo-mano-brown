@@ -54,7 +54,16 @@
 let sketchCode = `
 
 
-atores = [
+   
+def setup():
+    #fullScreen(0)
+    size(800, 600)
+    print(width, height)
+    textSize(30)
+    textAlign(CENTER, CENTER)
+    
+def draw():
+    atores = [
            {'nome': 'Glicose',
            'formula': 'C₆H₁₂O₆',
            'final': (300, 200, 0),
@@ -80,16 +89,6 @@ atores = [
            'cor': color(12, 90, 242)
            },
     ]      
-          
-def setup():
-    #fullScreen(0)
-    size(800, 600)
-    print(width, height)
-    textSize(30)
-    textAlign(CENTER, CENTER)
-    
-
-def draw():
     background(255)
     noStroke()
     fill(128, 42, 46, 64)
