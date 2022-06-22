@@ -99,7 +99,7 @@ def draw():
     # ATORES
     t = constrain(frameCount % 400 / 300.0, 0, 1)
     for ator in atores:
-        if keyPressed:
+        if keyIsPressed:
             texto = ator['formula']
         else:
             texto = ator['nome']
@@ -146,9 +146,7 @@ def seta(xa, ya, xb, yb):
     line(0, 0, -tam_ponta, tam_ponta)
     line(0, 0, -tam_ponta, -tam_ponta)
     popMatrix()    
-    
-    )
-    
+        
 `
 let wrapper_content = `
 class PythonFunctions: pass
